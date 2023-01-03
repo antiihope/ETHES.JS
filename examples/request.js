@@ -2,8 +2,9 @@ const { ethers } = require('ethers');
 require('dotenv').config();
 
 const INFURA_ID = process.env.INFURA_ID;
+
 const provider = new ethers.providers.JsonRpcProvider(
-  `https://mainnet.infura.io/v3/${INFURA_ID}`
+  `https://goerli.infura.io/v3/${INFURA_ID}`
 );
 
 const ERC20_ABI = [
@@ -14,7 +15,7 @@ const ERC20_ABI = [
 ];
 // ERC20_ABI is an array of functions that an Ethereum ERC-20 token must implement. It is used to interact with the Ethereum blockchain when working with ERC-20 tokens.
 
-const address = '0x6B175474E89094C44Da98b954EedeAC495271d0F'; // DAI Contract
+const address = '0xdc699ce89d18f9A27580046b874Fc61933D0162C'; // DAI Contract
 const contract = new ethers.Contract(address, ERC20_ABI, provider);
 
 const main = async () => {
@@ -28,7 +29,7 @@ const main = async () => {
   console.log(`Total Supply: ${totalSupply}\n`);
 
   const balance = await contract.balanceOf(
-    '0x6c6Bc977E13Df9b0de53b251522280BB72383700'
+    '0x26B97f99145d779D00c47aE5EB1E5852D540ABf8'
   );
 
   console.log(`Balance Returned: ${balance}`);
