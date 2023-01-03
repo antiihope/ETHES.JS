@@ -15,7 +15,7 @@ const ERC20_ABI = [
 ];
 // ERC20_ABI is an array of functions that an Ethereum ERC-20 token must implement. It is used to interact with the Ethereum blockchain when working with ERC-20 tokens.
 
-const address = '0xdc699ce89d18f9A27580046b874Fc61933D0162C'; // DAI Contract
+const address = '0x090D05c16B5D1c4Df9b53fddC90A0f3B71ad16fA'; // DAI Contract
 const contract = new ethers.Contract(address, ERC20_ABI, provider);
 
 const main = async () => {
