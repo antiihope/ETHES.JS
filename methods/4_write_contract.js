@@ -7,7 +7,7 @@ const provider = new ethers.providers.JsonRpcProvider(
 );
 
 const account1 = '0x26B97f99145d779D00c47aE5EB1E5852D540ABf8'; // Your account address 1
-const account2 = '0xAB947f9ac0a69B653A798105861aF0F85E4f44D1'; // Your account address 2
+const account2 = '0x74e6850ba484d6a6c45a0da88082aabf4bd69654'; // Your account address 2
 
 const privateKey1 = process.env.WALLET_PRIVATE_KEY; // Private key of account 1
 const wallet = new ethers.Wallet(privateKey1, provider);
