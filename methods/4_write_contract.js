@@ -39,5 +39,3 @@ const main = async () => {
   console.log(`\nBalance of sender: ${balanceOfSender}`);
   console.log(`Balance of reciever: ${balanceOfReciever}\n`);
 };
-
-main();

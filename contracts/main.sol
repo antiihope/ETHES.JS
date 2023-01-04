@@ -12,7 +12,6 @@ contract TestContractSimple {
         return abi.encodePacked(a, b);
     }
 
-    // write a function to turn numbers to literal strings
     function num2str(uint256 _i)
         internal
         pure
