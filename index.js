@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const port = 3001;
 
-let TEST_CONTRACT_ADDRESS = ' 0x74e6850ba484d6a6c45a0da88082aabf4bd69654';
+let TEST_CONTRACT_ADDRESS = '0x74e6850ba484d6a6c45a0da88082aabf4bd69654';
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
